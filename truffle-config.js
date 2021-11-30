@@ -26,7 +26,7 @@ module.exports = {
 
     }, goeril: {
       provider: () => new HDWalletProvider({
-        privateKeys: private_keys,
+        privateKeys: [process.env.abc],
         providerOrUrl: "https://goerli.infura.io/v3/749beb03d71f432e941731c2f90a7448",
         numberOfAddress: 1
       }),
